@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <script src="jquery-3.5.1.js" type="text/javascript"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top, .banner, .main, .footer {
+            text-align: center;
+            width: 1557px;
+            margin: 0 auto;
+            /*border: 1px dashed #0ed78b;*/
+            margin-bottom: 5px;
+            border-radius: 18px;
+
+        }
+
+        .top {
+            height: auto;
+            font-size: 30px;
+            background: none;
+        }
+
+        .banner {
+            height: 700px;
+
+        }
+
+        .main {
+            height: auto;
+            background: -webkit-radial-gradient(rgba(255, 255, 255, 0), rgb(240, 240, 240)), #ffffff;
+        }
+
+        .footer {
+            height: auto;
+            background: cornflowerblue;
+        }
+
+        .tag {
+            list-style: none;
+            margin-left: 1%;
+            margin-right: 1%;
+            line-height: 300%;
+            display: inline-block;
+
+        }
+        .banner>div{
+            /*background:-webkit-radial-gradient(rgba(0,0,0,1), rgba(0,0,0,0)),chocolate;*/
+            background: none;
+        }
+
+        li > a {
+            text-decoration: none;
+        }
+
+        ul>li{
+            perspective: 800px;
+        }
+        video:hover {
+            box-shadow: 15px 15px 20px #afafaf,-20px -20px 40px #a7a8a8;
+            z-index: 50;
+            transform: translateZ(120px);
+        }
+
+        .top > ul > li:hover {
+            background: #72c9d6;
+            color: coral;
+            font-weight: bold;
+        }
+
+        span > img {
+            height: 80px;
+            width: 586.45px;
+        }
+        .tag>a{
+            color: #fffffc;
+        }
+
+        .tag > video {
+            transition: 2s;
+            border-radius: 15px;
+        }
+
+        div > ul {
+            child-align: left;
+        }
+        body{
+            background-image:-webkit-radial-gradient(rgba(0,0,0,1), rgba(0,0,0,0)),url("src/img/ChMkJlbKwiyIYPeGAAskxXh5WKoAALGkAAAAAAACyTd961.jpg");
+            background-size: cover;
+        }
+        #guns{
+            padding: 80px;
+        }
+    </style>
+</head>
+<body >
+<div class="top">
+    <ul>
+        <li class="tag"><a href="#">Home</a></li>
+        <li class="tag"><a href="#">blog</a></li>
+        <li class="tag"><a href="#">NewsPaper</a></li>
+        <li class="tag"><a href="#">Download</a></li>
+        <li class="tag"><a href="#">Playing</a></li>
+        <li class="tag"><a href="#">Music</a></li>
+        <li class="tag"><a href="#">Chat</a></li>
+        <li class="tag"><a href="#">About</a></li>
+    </ul>
+</div>
+<div class="banner">
+    <div style="padding: 15px">
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRgy1h3bbolyxr8j30ga028jrm.jpg" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRgy1h3uq96y6btj30ga028aa2.jpg" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRly1gxh1uzclmxg30ga028q81.gif" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRgy1h2yxf7wmm9g31eu02x0uu.gif" alt=""></span>
+        <span><img src="https://file.service.qq.com/outside-files/20220205/202202052027154594.jpeg" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRgy1h2h0171pt1j30ga028q33.jpg" alt=""></span>
+        <span><img src="https://img04.sogoucdn.com/app/a/200692/500_70_feedback_45fd22c7fc1f4ca5ba642284f98aca0d.gif"
+                   alt=""></span>
+        <span><img src="https://tvax4.sinaimg.cn/large/008kAYTRgy1h2zwudsw1sj30ga028dg9.jpg" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRgy1h3he16te45j30ga028jrp.jpg" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRgy1h37z3xtp9jj30ga028q2y.jpg" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRly1gs58slunw6j30ga02874m.jpg" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRgy1h3b8abi95hg30dw01y0sy.gif" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRgy1h3eqjnfup3j30ws01ojru.jpg" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRgy1h2cui2q18ug31hd051h2o.gif" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRgy1h0t7gvgh8gg33n80hxjyq.gif" alt=""></span>
+        <span><img src="https://tva1.sinaimg.cn/large/008kAYTRly1h02oq3401bj30rs028js0.jpg" alt=""></span>
+    </div>
+</div>
+<div class="main">
+    <img style="border-radius: 10px;margin-top: 20px" src="src/img/fourthbanner.webp" alt="GUNs商城">
+    <div>
+        <ul id="guns">
+            <li class="tag" style="width: 400px;height: 342px">
+                <img src="src/img/100792_5_sm.jpg" alt="gun" title="金牛座 G2C 9mm 3.2 12+1 黑色">
+                <div style="width: 300px">金牛座 G2C 9mm 3.2 12+1 黑色</div>
+                <div><h3 style="color: red"><b>199.95美元</b></h3></div></li>
+            <li class="tag"><img src="src/img/142860_1_sm.jpg" alt="gun" title="金牛座 G2C 9mm 3.2 12+1 黑色">
+                <div style="width: 300px">Tokarev USA TBP 12 Bullpup 12 GA 霰弹枪 - 半自动，5+1 发，18.5 英寸枪管</div>
+                <div><h3 style="color: red"><b>258.42美元</b></h3></div></li>
+            <li class="tag"><img src="src/img/137752_2_sm.jpg" alt="gun" title="金牛座 G2C 9mm 3.2 12+1 黑色">
+                <div style="width: 300px"><b>金牛座1-GX4M931 G4 9MM 3.0 11+1</b></div>
+                <div><h3 style="color: red"><b>244.95美元</b></h3></div></li>
+            <li class="tag"><img src="src/img/411559649_1_sm.jpg" alt="gun" title="金牛座 G2C 9mm 3.2 12+1 黑色">
+                <div style="width: 300px"><b>鲁格牧马人 .22LR 4 5/8 钨 Cerakote</b></div>
+                <div><h3 style="color: red"><b>189.95美元</b></h3></div></li>
+            <li class="tag"><img src="src/img/thumbnail.php" alt="gun" title="鲁格 10/22 .22 LR">
+                <div style="width: 300px"><b>鲁格 10/22 .22 LR Cerakote</b></div>
+                <div><h3 style="color: red"><b>204.95美元</b></h3></div></li>
+            <li class="tag"><img src="src/img/107164_sm.jpg" alt="gun" title="Century International Arms Inc. Arms VSKA AK47 762X39 30RD Wood">
+                <div style="width: 300px"><b>Century International Arms Inc. Arms VSKA AK47 762X39 30RD Wood</b></div>
+                <div><h3 style="color: red"><b>772.05美元</b></h3></div></li>
+        </ul>
+
+    </div>
+    <div>
+        <img align="center" src="https://github-readme-stats.vercel.app/api?username=lmy8848&count_private=true&include_all_commits=true&show_icons=true&locale=cn&bg_color=45,36D1DC,5B86E5&text_color=FFFFFF&icon_color=fffe96&title_color=fffe96" />
+    </div>
+</div>
+<div class="main">
+    <div style="padding: 30px">
+        <ul>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/101、第四章  向量间的位置关系_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/102、第四章  空间平面方程_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/103、第四章 空间平面位置关系_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/104、第四章 平面位置关系例题_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/105、第四章 求平面方程的例题_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/106、第四章 平面的夹角和点到直线的距离_高清 1080P.">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/107、第四章 超纲内容—过坐标轴的平面_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/108、第四章 空间的直线方程_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/109、第四章 线与线的位置关系_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/10、第一章、函数性质2_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/110、第四章 线与平面的位置关系_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/111、第四章 例题_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/112、第四章 直线与直线的夹角_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/113、第五章 多元函数概念_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/114、第五章 多元函数定义域_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/115、第五章 二元函数对应法则_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/116、第五章 二元函数极限_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/117、第五章 一阶偏导概念_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/118、第五章 一阶偏导习题_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/119、第五章 全微分_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/11、第一章、第二节——极限概念_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/120、第五章 可微与偏导的关系_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/121、第五章 可微的本质_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/122、第五章 二阶偏导_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/123、第五章 二元隐函数一阶偏导_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/123、第五章 二元隐函数一阶偏导_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/124、第五章 二元隐函数二阶偏导_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/124、第五章 二元隐函数二阶偏导_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/125、第五章 链式法则介绍_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/125、第五章 链式法则介绍_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+            <li class="tag">
+                <video width="320" height="210" controls autoplay>
+                    <source src="http://110.42.174.137/JIeVideos/7、第一章 常见的基本初等函数_高清 1080P.mp4" type="video/mp4">
+                    <object data="movie.mp4" width="320" height="210">
+                        <embed width="320" height="240"
+                               src="http://110.42.174.137/JIeVideos/7、第一章 常见的基本初等函数_高清 1080P.mp4">
+                    </object>
+                </video>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div>
+        <a style="line-height: 100px; text-decoration: none" href="#"><h1><b>ICP备案号:晋ICP备2021012306号</b></h1></a>
+        <div style="text-align: center" id="ip">IP:</div>
+    </div>
+</div>
+<script type="text/javascript">
+    var settings = {
+        "url": "https:%2F%2Fip.cn/api/index",
+        "method": "GET",
+        "timeout": 0,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "data": JSON.stringify({
+            "index": "",
+            "type":"0"
+        }),
+    };
+    $.ajax(settings).done(function (response) {
+        console.log(response+" 请求");
+        document.getElementById("ip").innerHTML='<h4>'+"用户地址:"+response.address+'<br>'+"IP:"+response.ip+'</h4>';
+    });
+
+</script>
+</body>
+</html>
+
+
+

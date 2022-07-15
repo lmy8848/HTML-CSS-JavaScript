@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 600px;
+            height: 600px;
+            border: 2px solid #0ed78b;
+        }
+        img:hover{
+            transform: translate(40px);
+            width: 450px;
+            height: 450px;
+        }
+        .cheems{
+            transition: 8s;
+        }
+        img:active{
+            transform: translateY(300px);
+        }
+        img:visited{
+            transform: translateX(300px);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img class="cheems" width="50" height="50" src="./src/img/Cheems.jpg" alt="Cheems">
+</div>
+</body>
+</html>

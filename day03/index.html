@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <title>麒玖</title>
+    <style type="text/css">
+        .logo {
+            width: 100%;
+            background-color: rgba(206, 81, 43, 0.99);
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .bo > li {
+
+            font-size: 40px;
+
+        }
+
+        .bo > li:hover {
+            font-style: italic;
+            font-weight: bold;
+            background: coral;
+        }
+
+        .bo {
+            width: 5%;
+            list-style: none;
+            text-align: center;
+            vertical-align: top;
+            margin-right: 35px;
+            display: inline-block;
+
+        }
+
+        .daohang > li {
+            display: inline-block;
+            list-style: none;
+
+        }
+
+        li:hover {
+            font-style: italic;
+            font-weight: bold;
+            background: coral;
+        }
+
+        li {
+            margin-right: 3%;
+            margin-left: 3%;
+        }
+
+        ul {
+            background: #d1d5d6;
+        }
+
+        #acc {
+            width: 90%;
+            height: 500px;
+
+        }
+
+        .kuai {
+            /*display: inline-block;*/
+            width: 100%;
+        }
+        ol>div{
+            color: red;
+            font-family: 微软雅黑;
+            font-weight: bold;
+            margin-top: 50%;
+        }
+        ol>div:hover{
+            color: aqua;
+            background: #8c7fff;
+        }
+        img:hover{
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+<body>
+<div class="logo">
+    <a href="http://www.lumingyuan6868.xyz" rel="麒玖" target="_parent" >
+        <img width="132" height="100"
+             src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg"
+             alt="麒玖">
+    </a>
+    <a class="cheems" href="父窗口.html"><h2>Cheems <img class="img" src="src/img/Cheems.jpg" width="100" height="100" alt="Cheems"></h2></a>
+</div>
+<div>
+    <ul class="daohang">
+        <li><h1><a href="https://www.huawei.com" target="post">华为</a></h1></li>
+        <li><h1><a href="https://www.mi.com" target="post">小米</a></h1></li>
+        <li><h1><a href="https://www.qualcomm.cn" target="post">高通</a></h1></li>
+        <li><h1><a href="https://activity.lenovo.com.cn" target="post">联想</a></h1></li>
+        <li><h1><a href="https://www.meizu.com" target="post">魅族</a></h1></li>
+        <li><h1><a href="https://www.oneplus.com" target="post">OnePlus</a></h1></li>
+        <li><h1><a href="https://www.apple.com.cn" target="post">Apple</a></h1></li>
+        <li><h1><a href="https://source.android.google.cn" target="post">Pixel</a></h1></li>
+        <li><h1><a href="https://www.baidu.com" target="post">百度</a></h1></li>
+    </ul>
+</div>
+<div class="kuai">
+    <ol class="bo">
+        <div><h1>苹果 </h1></div>
+        <div><h1>香蕉</h1> </div>
+        <div><h1>梨  </h1></div>
+        <div><h1>葡萄</h1> </div>
+        <div><h1>test </h1></div>
+    </ol>
+    <iframe id="acc" src="https://www.huawei.com" frameborder="1" name="post">
+    </iframe>
+    <h5 id="time">时间同步</h5>
+    <button onclick="javascript:f()">同步时间</button>
+    <h4 align="center"><iframe frameborder=no border=0 marginwidth=0 marginheight=0 width=330 height=86 src=//music.163.com/outchain/player?type=2&id=1336856777&auto=true&height=66></iframe></h4>
+
+
+</div>
+<script type="text/javascript">
+    function f() {
+            document.getElementById("time").innerHTML = Date();
+
+    }
+
+</script>
+
+</body>
+</html>
